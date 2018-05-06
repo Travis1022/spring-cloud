@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /simple-provider-user
+  port: 8000
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
+    schema: schema.sql
+    data: data.sql
+#     driver-class-name: com.mysql.jdbc.Driver
+#     url: jdbc:mysql://127.0.0.1:3306/test?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf8&useSSL=false&autoReconnect=true
+#     username: root
+#     password: root
+
